@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\1043\Desktop\Blaze\BlazeServer.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE635B4F-E9AF-4CD7-9FDF-5AC0BD3AC26C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>BlazeServer</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.5722.14633</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>BlazeServer</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>lib\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MSCoreeTypeLib\ICorThreadpool.cs" />
+    <Compile Include="MSCoreeTypeLib\ThreadManager.cs" />
+    <Compile Include="CodeBlooded\Spades\Services\SpadesInstaller.cs" />
+    <Compile Include="AllPlayersStatValue.cs" />
+    <Compile Include="Anticheater.cs" />
+    <Compile Include="Blaze.cs" />
+    <Compile Include="BlazeServerService.cs" />
+    <Compile Include="BlazeServiceBase.cs" />
+    <Compile Include="Certificate.cs" />
+    <Compile Include="CHandleComponent_0023.cs" />
+    <Compile Include="CHandleComponent_1.cs" />
+    <Compile Include="CHandleComponent_19.cs" />
+    <Compile Include="CHandleComponent_1C.cs" />
+    <Compile Include="CHandleComponent_4.cs" />
+    <Compile Include="CHandleComponent_7.cs" />
+    <Compile Include="CHandleComponent_7802.cs" />
+    <Compile Include="CHandleComponent_9.cs" />
+    <Compile Include="CheckConfig.cs" />
+    <Compile Include="CheckDead.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="DBConnect.cs" />
+    <Compile Include="GameClient.cs" />
+    <Compile Include="GameManager.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="PacketHandlerC.cs" />
+    <Compile Include="PacketHandlerS.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="RandomExtensionMethods.cs" />
+    <Compile Include="Redirector.cs" />
+    <Compile Include="SecureConnectionResults.cs" />
+    <Compile Include="SecureConnectionResultsCallback.cs" />
+    <Compile Include="SecureTcpServer.cs" />
+    <Compile Include="SHandleComponent_0803.cs" />
+    <Compile Include="SHandleComponent_1.cs" />
+    <Compile Include="SHandleComponent_19.cs" />
+    <Compile Include="SHandleComponent_1C.cs" />
+    <Compile Include="SHandleComponent_4.cs" />
+    <Compile Include="SHandleComponent_7.cs" />
+    <Compile Include="SHandleComponent_7802.cs" />
+    <Compile Include="SHandleComponent_9.cs" />
+    <Compile Include="SQL_RUN.cs" />
+    <Compile Include="StatValue.cs" />
+    <Compile Include="Unlocknames.cs" />
+    <Compile Include="UpdateOnline.cs" />
+    <Compile Include="Network\ClientConnection.cs" />
+    <Compile Include="Network\ClientListener.cs" />
+    <Compile Include="Network\cListener.cs" />
+    <Compile Include="Network\EmptyPacket.cs" />
+    <Compile Include="Network\MasterClientConnection.cs" />
+    <Compile Include="Network\MasterServerConnection.cs" />
+    <Compile Include="Network\SendPacket.cs" />
+    <Compile Include="Network\ServerConnection.cs" />
+    <Compile Include="Network\ServerListener.cs" />
+    <Compile Include="Network\sListener.cs" />
+    <Compile Include="Network\Send\CreateGame.cs" />
+    <Compile Include="Network\Send\ExpressLogin.cs" />
+    <Compile Include="Network\Send\GameManagerComponent50.cs" />
+    <Compile Include="Network\Send\getAuthToken.cs" />
+    <Compile Include="Network\Send\getGameListSnapshot.cs" />
+    <Compile Include="Network\Send\getServerInstance.cs" />
+    <Compile Include="Network\Send\GetStatGroup.cs" />
+    <Compile Include="Network\Send\GetStatGroupCOOP.cs" />
+    <Compile Include="Network\Send\GetStatsAsyncNotification.cs" />
+    <Compile Include="Network\Send\GetStatsAsyncNotificationCOOP.cs" />
+    <Compile Include="Network\Send\getStatsByGroupAsync.cs" />
+    <Compile Include="Network\Send\getTelemetryServer.cs" />
+    <Compile Include="Network\Send\getTemplate.cs" />
+    <Compile Include="Network\Send\getUserSetGameListSubscription.cs" />
+    <Compile Include="Network\Send\JoinGame.cs" />
+    <Compile Include="Network\Send\joinGameByGroup.cs" />
+    <Compile Include="Network\Send\LeaveGameByGroup_Beta.cs" />
+    <Compile Include="Network\Send\LeaveGameByGroup.cs" />
+    <Compile Include="Network\Send\LeaveGameByGroup_COOP.cs" />
+    <Compile Include="Network\Send\listUserEntitlements2.cs" />
+    <Compile Include="Network\Send\login.cs" />
+    <Compile Include="Network\Send\LoginBF4.cs" />
+    <Compile Include="Network\Send\LoginPersona.cs" />
+    <Compile Include="Network\Send\migrateAdminPlayer.cs" />
+    <Compile Include="Network\Send\NotifyGamePlayerStateChange.cs" />
+    <Compile Include="Network\Send\NotifyGameSetup.cs" />
+    <Compile Include="Network\Send\NotifyGameSetupCOOP.cs" />
+    <Compile Include="Network\Send\NotifyGameSetupPS3.cs" />
+    <Compile Include="Network\Send\NotifyMatchmakingAsyncStatus.cs" />
+    <Compile Include="Network\Send\NotifyMatchmakingFailed.cs" />
+    <Compile Include="Network\Send\NotifyPlayerClaimingReservation.cs" />
+    <Compile Include="Network\Send\NotifyPlayerJoinCompleted.cs" />
+    <Compile Include="Network\Send\NotifyPlayerRemoved.cs" />
+    <Compile Include="Network\Send\ping.cs" />
+    <Compile Include="Network\Send\postAuth.cs" />
+    <Compile Include="Network\Send\preAuth.cs" />
+    <Compile Include="Network\Send\SendEmpty.cs" />
+    <Compile Include="Network\Send\SendError.cs" />
+    <Compile Include="Network\Send\SendNotifyPlayerJoin.cs" />
+    <Compile Include="Network\Send\PS3Login.cs" />
+    <Compile Include="Network\Send\SilentLogin.cs" />
+    <Compile Include="Network\Send\StartMatchMaking.cs" />
+    <Compile Include="Network\Send\UpdateExtendedDataAttribute.cs" />
+    <Compile Include="Network\Send\UserAdded.cs" />
+    <Compile Include="Network\Send\UserAuthenticated.cs" />
+    <Compile Include="Network\Send\UserSessionExtendedDataUpdate.cs" />
+    <Compile Include="Network\Send\UserSessionExtendedDataUpdateCOOP.cs" />
+    <Compile Include="Network\Send\UserSetingsLoad.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
