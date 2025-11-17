@@ -25,3 +25,5 @@ online_access2=1
 
 In subnet.txt: 
 0.0.0.0:0.0.0.0:
+
+for bf3lan.sql, you will need some mysql app to run it, uwamp for example.
