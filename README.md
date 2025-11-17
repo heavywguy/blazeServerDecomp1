@@ -20,9 +20,8 @@ dbuser=root
 dbpass=root
 dbConnectionPort=3306
 UseLocalPlayerAlgorithm=1
+online_access=1
+online_access2=1
 
 In subnet.txt: 
 0.0.0.0:0.0.0.0:
-
-online_access=1
-online_access2=1
